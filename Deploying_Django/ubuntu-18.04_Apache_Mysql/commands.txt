@@ -14,7 +14,7 @@ $ cd ..
 $ apt install python3-pip
 $ pip3 install virtualenv
 $ virtualenv venv -p python3
-$ source venv/bin/active
+$ source venv/bin/activate
 (venv) $ pip freeze  # Note we are now on the virtual environment we created
 (venv) $ pip install django
 (venv) $ cd /tutorial/django
@@ -34,7 +34,7 @@ $ source venv/bin/active
 (venv) $ cd /tutorial/django/tutorial
 (venv) $ nano tutorial/settings.py ### change the databases content to the value listed below
 (venv) $ python manage.py check
-(venv) $ python manage.migrate
+(venv) $ python manage.py migrate
 (venv) $ python manage.py createsuperuser
 (venv) $ python manage.py runserver 0.0.0.0:8000 ### open your browser and login using superuser at <your-ip-address>:8000/admin
 (venv) $ cd /
